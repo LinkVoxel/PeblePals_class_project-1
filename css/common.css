@@ -244,3 +244,25 @@ body {
         color: var(--yellow);
     }
 }
+
+.clouds-section {
+    background: #90B7BF;
+    background: linear-gradient(180deg, rgba(103, 161, 188, 1) 0%, rgba(144, 183, 191, 1) 100%);
+    position: relative;
+    min-height: 600px;
+}
+.cloud{
+    position: absolute;
+}
+.cloud.left{
+    top: 5px;
+    left: 0;
+}
+.cloud.right{
+    right: 0;
+    top: 30px;
+}
+.cloud.small{
+    left: 33%;
+    top: 16px;
+}
