@@ -250,19 +250,28 @@ body {
     background: linear-gradient(180deg, rgba(103, 161, 188, 1) 0%, rgba(144, 183, 191, 1) 100%);
     position: relative;
     min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.cloud{
+
+.cloud {
     position: absolute;
 }
-.cloud.left{
+
+.cloud.left {
     top: 5px;
     left: 0;
 }
-.cloud.right{
+
+.cloud.right {
     right: 0;
     top: 30px;
 }
-.cloud.small{
+
+.cloud.small {
     left: 33%;
     top: 16px;
 }
