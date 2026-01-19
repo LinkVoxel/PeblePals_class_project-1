@@ -32,3 +32,40 @@ const testimonialList = [
     }
 ]
 
+let testimonialBox = document.getElementById('tesitmonials-box');
+// Generate testimonial elements from the testimonialList array and display
+// them on the page with a visual star rating and reviewer name.
+
+for (let review of testimonialList) {
+
+    let stars = '';
+    for(let i = 0; i < 5; i++){
+        if(i < review.rating){
+                stars += `<img class="star-img" src="/assets/star_yellow.svg">`
+        }else {
+            stars  += `<img class ='star-img' src = '/assets/star_black.svg>`
+        }
+    }
+//tesdsdffsdfdds
+
+    let testimonialToAdd = `
+    <div class="testimonials-box">
+
+                <div class="testimonial">
+                    <div class="t-rating-row">
+                        <div class="t-stars">
+                            ${stars}
+                            <img class="star-img" src="/assets/star_yellow.svg">
+                            <img class="star-img" src="/assets/star_yellow.svg">
+                            <img class="star-img" src="/assets/star_yellow.svg">
+                        </div>
+                        <p class="t-name">~${review.name}</p>
+                    </div>
+                    <p class="t-message">
+                        ${review.name}
+                    </p>
+                </div>
+                `
+
+                testimonialBox.innerHTML += testimonialToAdd
+}
